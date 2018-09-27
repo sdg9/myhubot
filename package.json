@@ -4,10 +4,16 @@
   "private": true,
   "author": "Steven Goff <stevengoff@discover.com>",
   "description": "A simple helpful robot for your Company",
+  "scripts": {
+    "start": "hubot-dotenv -n myhubot",
+    "botframework": "hubot-dotenv -n myhubot -a botframework"
+  },
   "dependencies": {
+    "dotenv": "^6.0.0",
     "hubot": "^3.1.1",
     "hubot-botframework": "https://github.com/sdg9/BotFramework-Hubot.git",
     "hubot-diagnostics": "^1.0.0",
+    "hubot-dotenv": "^1.0.0",
     "hubot-google-images": "^0.2.7",
     "hubot-google-translate": "^0.2.1",
     "hubot-help": "^1.0.1",
